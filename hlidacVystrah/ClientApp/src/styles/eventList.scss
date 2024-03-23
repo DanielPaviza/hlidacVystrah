@@ -1,0 +1,41 @@
+﻿
+@import "vars";
+
+#eventList {
+    .urgencyContainer {
+        .event {
+            width: calc(100% - 2px);
+            height: calc(100% - 2px);
+            text-decoration: none;
+            cursor: pointer;
+
+            img {
+                height: 56px;
+                width: 56px;
+                margin: 6px;
+            }
+
+            span {
+                color: $black;
+                font-size: 0.94rem;
+                font-weight: bold;
+                letter-spacing: 0.02rem;
+                margin-bottom: 6px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .event {
+                span {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
+    .noEvents {
+        i {
+            color: $green;
+        }
+    }
+}

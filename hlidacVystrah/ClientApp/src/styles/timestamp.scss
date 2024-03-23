@@ -1,0 +1,16 @@
+﻿
+@import "vars";
+
+#timestamp {
+    i {
+        cursor: pointer;
+    }
+
+    .infoBox {
+        z-index: 1000;
+        background-color: white;
+        left: 14px;
+        top: 64%;
+        border-top-left-radius: 0px !important;
+    }
+}

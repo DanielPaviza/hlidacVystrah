@@ -1,0 +1,56 @@
+﻿
+@import "vars";
+
+#login, #register, #resetpassword, #newpassword {
+    background: $gray;
+    background: white;
+    min-height: calc(100vh - 40px);
+
+    .loginExpired {
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, calc(-100% - 6px));
+    }
+
+    & > div {
+        background: white;
+        background: $gray;
+        margin-top: -10%;
+
+        .resetPasswordInputButton {
+            width: fit-content;
+        }
+
+        button {
+            font-size: 15px;
+
+            &:hover {
+                border: 1px solid $grayDarker !important;
+            }
+        }
+
+        i {
+            font-size: 19px;
+
+            &.toggler {
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                transform: translate(0%, -46%);
+                right: 4px;
+                font-size: 19px;
+            }
+        }
+
+        input {
+            width: 260px;
+            font-size: 15px;
+            border: 1px solid $grayDarker !important;
+            outline: none;
+
+            &:focus {
+                border-color: rgba(black, 0.5) !important;
+            }
+        }
+    }
+}

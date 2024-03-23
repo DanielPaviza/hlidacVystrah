@@ -1,0 +1,16 @@
+﻿
+@import "vars";
+
+#activateAccount {
+    min-height: 100vh;
+
+    & > div {
+        margin-top: -10%;
+    }
+
+    @media (max-width: 768px) {
+        h2 {
+            font-size: 1.6rem !important;
+        }
+    }
+}

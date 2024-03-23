@@ -1,0 +1,127 @@
+﻿
+@import 'vars';
+
+body {
+    color: $black;
+    font-family: 'Roboto', sans-serif;
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        font-size: 1.56rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+    }
+
+    .green {
+        background-color: $green;
+        fill: $green;
+    }
+
+    .yellow {
+        background-color: $yellow;
+        fill: $yellow;
+    }
+
+    .yellow-light {
+        background-color: rgba($yellow, 0.96);
+        fill: $yellow;
+    }
+
+    .orange {
+        background-color: $orange;
+        fill: $orange;
+    }
+
+    .red {
+        background-color: $red;
+        fill: $red;
+    }
+
+    .gray {
+        background-color: $grayEvent;
+        fill: $grayEvent;
+    }
+
+    .noEvent {
+        background-color: $noEvent;
+        fill: $noEvent;
+        border: 1px solid rgba($black, 0.4);
+    }
+
+    .noEventStroke {
+        stroke-width: 2px;
+        background-color: $noEvent;
+        fill: $noEvent;
+    }
+
+    .colorCircle {
+        width: 16px !important;
+        height: 16px !important;
+        border-radius: 50%;
+    }
+
+    .fit-content {
+        width: fit-content;
+    }
+
+    .cursor {
+        cursor: pointer;
+    }
+
+    .formInfo {
+        animation-name: formInfoAnimation;
+        animation-duration: 5s;
+        transform: translate(0%, 0%);
+
+        span {
+            margin-top: -4px;
+        }
+
+        @keyframes formInfoAnimation {
+            0% {
+                opacity: 0;
+                transform: translate(-50%, 0%);
+            }
+
+            4% {
+                opacity: 1;
+                transform: translate(0%, 0%);
+            }
+
+            80% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+    }
+
+    @media (min-width: 992px) {
+        h1 {
+            font-size: 1.4rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+        }
+
+        h4 {
+            font-size: 1.3rem;
+        }
+    }
+}

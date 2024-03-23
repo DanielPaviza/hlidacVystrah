@@ -1,0 +1,28 @@
+﻿
+@import "vars";
+
+.infoBox {
+    cursor: pointer;
+    color: $black;
+
+    .infoContainer {
+        bottom: calc(100% - 0px);
+        left: -180px;
+        width: 190px;
+        font-size: 14px;
+
+        div {
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 0px solid transparent;
+            border-top: 10px solid $gray; /* Change the color as needed */
+        }
+
+        span {
+            background-color: $gray;
+            border-bottom-right-radius: 0 !important;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+    }
+}

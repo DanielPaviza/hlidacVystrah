@@ -1,0 +1,48 @@
+﻿
+@import "../vars";
+
+#logspage {
+    min-height: calc(100vh - 56px);
+
+    #spinner {
+        transform: none !important;
+        position: relative !important;
+        top: 0;
+        left: 0;
+    }
+
+    .pageNumber {
+        cursor: pointer;
+
+        &.selected {
+            font-size: 18px;
+        }
+    }
+
+    input[type='checkbox'] {
+        width: 16px;
+        height: 16px;
+    }
+
+    table {
+        overflow-x: auto;
+
+        tr {
+            &:nth-child(even) {
+                background-color: $gray;
+            }
+        }
+    }
+
+    .Info {
+        background-color: rgba($yellow, 0.5);
+    }
+
+    .Error {
+        background-color: rgba($red, 0.5);
+    }
+
+    .Success {
+        background-color: rgba($green, 0.5);
+    }
+}

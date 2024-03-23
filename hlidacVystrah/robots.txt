@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /_adm
+Disallow: /_adm/users
+Disallow: /_adm/logs
+Sitemap: https://hlidacvystrah.cz/sitemap.xml

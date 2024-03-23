@@ -1,0 +1,16 @@
+﻿
+@import "vars";
+
+footer {
+
+    background-color: $gray;
+
+    .copyright {
+        font-size: 0.96rem;
+        opacity: 0.7;
+    }
+
+    a {
+        opacity: 0.9;
+    }
+}

@@ -1,0 +1,37 @@
+﻿
+@import "vars";
+
+#legend {
+
+    & > div {
+        width: fit-content;
+    }
+
+    .legendaButton {
+        position: relative;
+        z-index: 2;
+        border: 1px solid transparent;
+        margin-bottom: -1px;
+        background: white;
+        cursor: pointer;
+        border: 1px solid $gray;
+        border-radius: 6px;
+        user-select: none;
+
+        &.border {
+            border-radius: 6px 6px 0 0;
+            border-bottom: 0 !important;
+        }
+    }
+
+    .legenda {
+        position: relative;
+        z-index: 1;
+        cursor: pointer;
+
+        & > div {
+            //border: 1px solid $gray;
+            border-radius: 6px 0 6px 6px;
+        }
+    }
+}

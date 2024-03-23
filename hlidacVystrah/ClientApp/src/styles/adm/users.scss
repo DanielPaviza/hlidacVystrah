@@ -1,0 +1,17 @@
+﻿
+@import "../vars";
+
+#users {
+    min-height: calc(100vh - 56px);
+
+    table {
+        overflow-y: auto!important;
+    }
+
+    .del {
+        i {
+            font-size: 24px;
+            cursor: pointer;
+        }
+    }
+}
